@@ -1,0 +1,115 @@
+<html>
+
+<head>
+
+	<style>
+		.wrapper{
+		}
+
+		#catList{	
+			float: left;
+			margin: 20px;
+		}
+		#catViewer{
+			width: 400px;
+			height: 400px;
+			border: solid 1px blue;
+			float: left;
+		}
+		
+		img{
+			max-height: 250px;
+			max-width: 250px;
+		
+		}
+		
+	li {
+		border: solid 1px purple; 
+	
+	}
+	
+	
+	</style>
+
+<title> Insane Cat Clicker!</title>
+
+<h1> CAT CLICKER PREMIUM! WOOOOoooooOoooo! </h1>	
+ </head>
+
+
+<body>
+	
+	<h3> STEPS: </h3>
+	<h4> 1. Select a cat. </h4> 
+	<h4> 2. Click on the cat to show your love!</h4>
+
+
+	<div class="wrapper">
+		<div id="catListDiv" class="child">
+			<ul id="catList">	
+			</ul>
+		</div>
+
+		<div id="catViewer" class="child">
+			<h3 id="catCount">  </h3>
+			<img src=""  id="catImageNow"  />
+			<h3 id="catName"> </h3>
+		</div>
+	</div>
+
+
+<script>
+	var  catList = document.getElementById("catList");
+	var displaySegment = document.getElementById("catImageNow");
+	var catCounter = document.getElementById("catCount");
+	var catNamer= document.getElementById("catName");
+
+
+	var catNames=["Jack the Cat", "Pat the Cat", "Kat the cat", "Salem the cat", "Snugglepuff the cat"];
+	var catImages = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"];
+   var catCounts = [0,0,0,0,0];
+   var catCount  = catImages.length;	
+   var currentCat = -1; 
+
+
+	for(i=0; i< catCount; i++){
+		
+		var elem = document.createElement("li");
+		elem.innerHTML  = catNames[i];
+	
+		elem.addEventListener( "click", (function(j) {
+
+				return    function() {
+
+					catNamer.innerHTML = "Cat name: " + catNames[j];
+					catCounter.innerHTML = "Click Count For this cat: " + catCounts[j];
+					displaySegment.src= catImages[j];
+					currentCat= j;
+				}
+
+		})(i) );  //using the Immediately invoked function expression
+
+
+	catList.appendChild(elem);				
+		}
+		
+	//	catCounts[j] = catCounts[j]  + 1; 
+	
+    var viewer = document.getElementById("catViewer");
+ 
+    viewer.addEventListener("click", function () {
+    
+    		catCounts[currentCat] = catCounts[currentCat]  + 1;
+    		catCounter.innerHTML = "Click Count For this cat: " + catCounts[currentCat];
+    			
+    	
+    }, false);
+    
+
+</script>
+
+</body>
+
+
+
+</html>
