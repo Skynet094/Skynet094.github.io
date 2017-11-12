@@ -2,17 +2,29 @@
 
 <head>
 
+
+
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+
+
 <title> Insane Cat Clicker!</title>
 
-<h1> CAT CLICKER PREMIUM! WOOOOoooooOoooo! </h1>	
+<h1> CAT CLICKER PREMIUM!   WOoooo! </h1>	
 <style>
 
-
-<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+		h1{
+		
+		font-family: 'Monoton';
+		font-size: 50px;
+		
+		}
 
 		.steps{
 			
-			font-family: 'Sofia';
+			font-family: 'Pacifico';
 		
 		}
 		.wrapper{
@@ -21,12 +33,17 @@
 		#catList{	
 			float: left;
 			margin: 20px;
+   	   font-family: 'Berkshire Swash';font-size: 22px;
 		}
 		#catViewer{
 			width: 400px;
 			height: 400px;
-			border: solid 1px blue;
 			float: left;
+			 border: 10px solid transparent;
+  		    padding: 15px;
+   		 -webkit-border-image: url(border.png) 30 round; /* Safari 3.1-5 */
+   		 -o-border-image: url(border.png) 30 round; /* Opera 11-12.1 */
+   		 border-image: url(border.png) 30 round;
 		}
 		
 		img{
@@ -35,8 +52,11 @@
 		
 		}
 		
+		iframe{
+		float: right;
+		}
+		
 	li {
-		border: solid 1px purple; 
 	
 	}
 	
@@ -86,7 +106,7 @@
 	for(i=0; i< catCount; i++){
 		
 		var elem = document.createElement("li");
-		elem.innerHTML  = catNames[i];
+		elem.innerHTML  = '<a href="#">'+ catNames[i] + '</a>';
 	
 		elem.addEventListener( "click", (function(j) {
 
