@@ -27,7 +27,7 @@
 			float: left;
 			margin: 20px;
    	   font-family: 'Berkshire Swash';font-size: 22px;
-   	   
+   	   background-color: blue;
 		}
 		#catViewer{
 			width: 400px;

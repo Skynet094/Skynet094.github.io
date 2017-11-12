@@ -8,60 +8,14 @@
 <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+<link rel="stylesheet" href="index.css">
+
+
 
 
 <title> Insane Cat Clicker!</title>
 
-<h1> CAT CLICKER PREMIUM!   WOoooo! </h1>	
-<style>
-
-		h1{
-		
-		font-family: 'Monoton';
-		font-size: 50px;
-		
-		}
-
-		.steps{
-			
-			font-family: 'Pacifico';
-		
-		}
-		.wrapper{
-		}
-
-		#catList{	
-			float: left;
-			margin: 20px;
-   	   font-family: 'Berkshire Swash';font-size: 22px;
-		}
-		#catViewer{
-			width: 400px;
-			height: 400px;
-			float: left;
-			 border: 10px solid transparent;
-  		    padding: 15px;
-   		 -webkit-border-image: url(border.png) 30 round; /* Safari 3.1-5 */
-   		 -o-border-image: url(border.png) 30 round; /* Opera 11-12.1 */
-   		 border-image: url(border.png) 30 round;
-		}
-		
-		img{
-			max-height: 250px;
-			max-width: 250px;
-		
-		}
-		
-		iframe{
-		float: right;
-		}
-		
-	li {
-	
-	}
-	
-</style>
-
+<h1 class="rainbow-text"> CAT CLICKER PREMIUM!   WOoooo! </h1>	
  </head>
 
 
@@ -89,7 +43,7 @@
 
 <iframe width="320" height="240" src="https://www.youtube.com/embed/QH2-TGUlwu4?autoplay=1"> </iframe>
 
-<script src="mvc_cat.js"></script>
+<script src="index.js"></script>
 
 </body>
 
