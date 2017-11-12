@@ -7,7 +7,14 @@
   background-clip: text;
   font-family: Monoton;
   font-size: 50px;
+  
+  text-shadow: 
+     3px 0px 3px green,
+    -3px 0px 3px green,
+     6px 0px 6px green,
+    -6px 0px 6px green;
   }
+  
   
   body{
 		
@@ -27,7 +34,7 @@
 			float: left;
 			margin: 20px;
    	   font-family: 'Berkshire Swash';font-size: 22px;
-   	   background-color: blue;
+   	   
 		}
 		#catViewer{
 			width: 400px;

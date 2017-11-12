@@ -1,29 +1,34 @@
 var model = {
 	
-	catInfo: {
-		name: "Jack The Cat",
-		imageSource:"1.jpg",
-		catCount:0
-	},
 	
-	catList: [{
+	catList: [
+	
+		{
+		name: "Jack The Cat",
+		imageSource: "1.jpg",
+		catCount:0		
+		
+		},
+	
+	
+		{
 		name: "Pat the Cat",
-		imageSource:"1.jpg",
+		imageSource:"2.jpg",
 		catCount:0}, 
 		
 		{
 		name: "Kat the Cat",
-		imageSource:"2.jpg",
-		catCount:0},
-		
-		 {
-		name: "Salem the Cat",
 		imageSource:"3.jpg",
 		catCount:0},
 		
 		 {
-		name: "Snugglepuff the Cat",
+		name: "Salem the Cat",
 		imageSource:"4.jpg",
+		catCount:0},
+		
+		 {
+		name: "Snugglepuff the Cat",
+		imageSource:"5.jpg",
 		catCount:0}
 		
 		]	

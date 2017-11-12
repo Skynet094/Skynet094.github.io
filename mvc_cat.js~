@@ -8,22 +8,22 @@ var model = {
 	
 	catList: [{
 		name: "Pat the Cat",
-		imageSource:"1.jpg",
+		imageSource:"2.jpg",
 		catCount:0}, 
 		
 		{
 		name: "Kat the Cat",
-		imageSource:"2.jpg",
-		catCount:0},
-		
-		 {
-		name: "Salem the Cat",
 		imageSource:"3.jpg",
 		catCount:0},
 		
 		 {
-		name: "Snugglepuff the Cat",
+		name: "Salem the Cat",
 		imageSource:"4.jpg",
+		catCount:0},
+		
+		 {
+		name: "Snugglepuff the Cat",
+		imageSource:"5.jpg",
 		catCount:0}
 		
 		]	
@@ -44,13 +44,9 @@ var octopus = {
 		viewer.addEventListener("click", function () {
 			
 			
-						console.log(octopus.currentCat);
-							
 				    		
 				    			model.catList[octopus.currentCat].catCount = model.catList[octopus.currentCat].catCount  + 1;
 				    			catDisplayView.render(octopus.currentCat);
-				    			console.log("I invaded this cave");
-				    				
 								catDisplayView.render();
 				    						    	
 				    }, false);
@@ -142,13 +138,10 @@ var catListView = {
 
 var catDisplayView = {
 	
-	render: function(){
-		
+	render: function(){		
 				   
 					var catCounter = document.getElementById("catCount");
-				   
-			  		catCounter.innerHTML = "Click Count For this cat: " + octopus.getCurrentCatCount();
-				   
+			  		catCounter.innerHTML = "Click Count For this cat: " + octopus.getCurrentCatCount();				   
 				 					
 					}
 
